@@ -31,7 +31,7 @@ const TodoList: React.FC = () => {
     const fetchTodos = async () => {
       try {
         const response = await axios.get<Todo[]>(
-          `${process.env.BASE_URL}/todos`,
+          `https://taskthread-backend.vercel.app/api/todos`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,

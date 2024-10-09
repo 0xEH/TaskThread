@@ -34,7 +34,7 @@ type NewTodoFormProps = {
 
 const addTodo = async (todo: NewTodo) => {
   try {
-    await axios.post(`${process.env.BASE_URL}/todos`, todo, {
+    await axios.post(`https://taskthread-backend.vercel.app/api/todos`, todo, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     toast.success(`Todo "${todo.title}" created.`);

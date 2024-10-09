@@ -28,11 +28,14 @@ const SignIn = () => {
     e.preventDefault();
 
     try {
-      await axios.post(`${process.env.BASE_URL}/auth/signup`, {
-        username,
-        email,
-        password,
-      });
+      await axios.post(
+        `https://taskthread-backend.vercel.app/api/auth/signup`,
+        {
+          username,
+          email,
+          password,
+        }
+      );
       router.push('/sign-in');
     } catch (error) {
       console.log(error);

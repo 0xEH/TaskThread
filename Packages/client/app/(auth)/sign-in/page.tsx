@@ -26,10 +26,13 @@ const SignIn = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${process.env.BASE_URL}/auth/signin`, {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        `https://taskthread-backend.vercel.app/api/auth/signin`,
+        {
+          email,
+          password,
+        }
+      );
       localStorage.setItem('token', response.data.token);
       router.push('/board');
     } catch (error) {

@@ -24,7 +24,7 @@ const KanbanBoard: React.FC = () => {
   const fetchTodos = useCallback(async () => {
     try {
       const response = await axios.get<Todo[]>(
-        `${process.env.BASE_URL}/todos`,
+        `https://taskthread-backend.vercel.app/api/todos`,
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         }
@@ -75,7 +75,7 @@ const KanbanBoard: React.FC = () => {
 
       try {
         await axios.patch(
-          `${process.env.BASE_URL}/todos/${draggableId}`,
+          `https://taskthread-backend.vercel.app/api/todos/${draggableId}`,
           { status: destination.droppableId },
           {
             headers: {

@@ -14,7 +14,7 @@ export const Navbar = () => {
   const handleLogout = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post(`${process.env.BASE_URL}/auth/logout`);
+      await axios.post(`https://taskthread-backend.vercel.app/api/auth/logout`);
       localStorage.removeItem('token');
       router.push('/sign-in');
     } catch (error) {

@@ -35,9 +35,12 @@ type NewTodoFormProps = {
 
 const fetchTodoById = async (id: string): Promise<NewTodo | null> => {
   try {
-    const response = await axios.get(`${process.env.BASE_URL}/todos/${id}`, {
-      headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
-    });
+    const response = await axios.get(
+      `https://taskthread-backend.vercel.app/api/todos/${id}`,
+      {
+        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+      }
+    );
     return response.data[0];
   } catch (error) {
     console.error('Error fetching todo:', error);
@@ -47,9 +50,13 @@ const fetchTodoById = async (id: string): Promise<NewTodo | null> => {
 
 const updateTodo = async (id: string, todo: NewTodo) => {
   try {
-    await axios.put(`${process.env.BASE_URL}/todos/${id}`, todo, {
-      headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
-    });
+    await axios.put(
+      `https://taskthread-backend.vercel.app/api/todos/${id}`,
+      todo,
+      {
+        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+      }
+    );
     toast.success(`Todo "${todo.title}" updated successfully.`);
   } catch (error) {
     console.error('Error updating todo:', error);
