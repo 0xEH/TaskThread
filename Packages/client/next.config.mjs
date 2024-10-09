@@ -3,8 +3,6 @@ const nextConfig = {
   env: {
     BASE_URL: process.env.BASE_URL,
   },
-  output: 'export',
-  reactStrictMode: true,
 };
 
 export default nextConfig;
