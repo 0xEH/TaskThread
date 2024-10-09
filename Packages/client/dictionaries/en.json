@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "Get TaskThread",
+    "description": "Connects tasks into a unified thread"
+  },
+  "signUp": {
+    "title": "Sign up to TaskThread",
+    "description": "Enter your credentials to access TaskThread",
+    "username": "username",
+    "email": "email",
+    "password": "password",
+    "submit": "Submit",
+    "alreadyHaveAccount": "Already have an account?"
+  },
+  "signIn": {
+    "title": "Sign up to TaskThread",
+    "description": "Enter your credentials to access TaskThread",
+    "submit": "Sign in",
+    "signUp": "Sign up",
+    "doNotHaveAccount": "Don't have an account?"
+  },
+  "header": {
+    "logout": "Logout"
+  },
+  "task": {
+    "addTask": "Add task",
+    "todo": "Todo",
+    "done": "Done",
+    "inProgress": "In Progress",
+    "low": "low",
+    "medium": "medium",
+    "high": "high",
+    "enterTheTodoBelow": "Enter the todo below",
+    "title": "Title *",
+    "description": "Description (Optional)",
+    "status": "Status *",
+    "priority": "Priority *",
+    "submit": "Create Todo",
+    "enterDescriptionHere": "Enter description here",
+    "enterTodoTitle": "Enter todo title...",
+    "EditDetailsBelow": "Edit details below"
+  }
+}

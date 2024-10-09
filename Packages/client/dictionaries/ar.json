@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "احصل على سلسلة المهام",
+    "description": "يربط مهامك بخيط موحد"
+  },
+  "signUp": {
+    "title": "سجل في سلسلة المهام",
+    "description": "أدخل بياناتك للوصول إلى سلسلة المهام",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة السر",
+    "submit": "ارسل",
+    "alreadyHaveAccount": " هل لديك حساب بالفعل؟"
+  },
+  "signIn": {
+    "title": "تسجيل الدخول في سلسلة المهام",
+    "description": "أدخل بياناتك للوصول إلى سلسلة المهام",
+    "submit": " تسجيل الدخول",
+    "signUp": "اشترك",
+    "doNotHaveAccount": "ليس لديك حساب؟"
+  },
+  "header": {
+    "logout": "تسجيل الخروج"
+  },
+  "task": {
+    "addTask": "إضافة مَهمة",
+    "todo": "للقيام به",
+    "done": "تم إنجازه",
+    "inProgress": "قيد التنفيذ",
+    "low": "منخفضة",
+    "medium": "متوسطة",
+    "high": "مرتفعة",
+    "enterTheTodoBelow": "أدخل ما يجب القيام به أدناه",
+    "title": "اسم المهمة *",
+    "description": "الوصف (اختياري)",
+    "status": "الحالة *",
+    "priority": "الأولوية *",
+    "submit": "إنشاء مهامة",
+    "enterDescriptionHere": "أدخل الوصف هنا",
+    "enterTodoTitle": "أدخل عنوان المهمة...",
+    "EditDetailsBelow": "تعديل التفاصيل أدناه"
+  }
+}
