@@ -27,6 +27,10 @@ Having a list of everything you need to do written down in one place means you s
 - To start the `server` application, Move to the server dir to run `pnpm start`.
 - Connect to the API using Postman on port `4000`.
 
+### Know Issues
+
+- APIs are deployed using the free VERCEL version. So, sometimes, the deployed API version returns a timeout, which is not happening locally.
+
 ### Technologies Used
 
 - [ZOD](https://zod.dev/) TypeScript-first schema validation with static type inference.
