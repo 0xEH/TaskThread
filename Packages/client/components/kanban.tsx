@@ -96,7 +96,7 @@ const KanbanBoard: React.FC = () => {
       acc[column] = todos.filter((todo) => todo.status === column);
       return acc;
     }, {} as Record<string, Todo[]>);
-  }, [todos]);
+  }, [columns, todos]);
 
   return (
     <div className=' mx-auto p-4 mt-6 bg-zinc-950'>
